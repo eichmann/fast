@@ -22,6 +22,7 @@ WebContent/Person/Person.jsp -text
 WebContent/Person/PersonList.jsp -text
 WebContent/Place/Place.jsp -text
 WebContent/Place/PlaceList.jsp -text
+WebContent/WEB-INF/lib/java-cup-0.11a-beta-20060608-runtime.jar -text
 WebContent/WEB-INF/web.xml -text
 WebContent/classHierarchy.jsp -text
 WebContent/classList.jsp -text
@@ -35,5 +36,6 @@ WebContent/local_menu_end.jsp -text
 WebContent/local_menu_home.jsp -text
 WebContent/menu.jsp -text
 WebContent/resources/style.css -text
+WebContent/search.jsp -text
 WebContent/utility/sparqlDump.jsp -text
 /pom.xml -text
