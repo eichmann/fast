@@ -32,7 +32,17 @@
    <h3>Object Properties</h3>
    <table>
       <fast:foreachPlaceGeoIterator>
-         <tr><td>geo</td><td><a href="../<fast:PlaceGeoType/>/<fast:PlaceGeoType/>.jsp?uri=<fast:PlaceGeo/>"><fast:PlaceGeo /></a></td></tr>
+         <tr><td>geo</td><td>
+            <c:set var="localType"><fast:PlaceGeoType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<fast:PlaceGeo/>"><fast:PlaceGeo/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<fast:PlaceGeoType/>/<fast:PlaceGeoType/>.jsp?uri=<fast:PlaceGeo/>"><fast:PlaceGeo /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </fast:foreachPlaceGeoIterator>
    </table>
 
